@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wagonscherm</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+  .talen-container {
+    margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: row;
+      border-radius: 12px;
+    }
+
+    .talen {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: white;
+      width: 180px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .taal_icon{
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+    }
+
+    .active{
+      border: 4px solid #0b5a8a;
+    }
+
+    .not-active{
+      opacity: 0.5;
+      border: 4px solid transparent;
+    }
+
+    .icon{
+      width:26px;
+      height:26px;
+    }
+
+</style>
+<body style="height:100%;margin:0;background:#000000;display:flex;align-items:center;justify-content:center;padding:18px;color:#000;font-family:'Jost',sans-serif;">
+  <div style="width:1280px;height:720px;padding:30px;background:#0b5a8a;border:6px solid #073753;box-sizing:border-box;display:flex;flex-direction:column;gap:10px;">
+    <!-- Bovenste deel -->
+    <div style="display:flex;gap:10px;height:60%;">
+      <div style="background:#ffffff;border-radius:20px;flex:2;padding:10px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;color:#000;position:relative;">
+        <div style="font-weight:700;font-size:1.8rem;">Bestemming</div>
+        <div style="position:absolute;right:15px;top:10px;font-weight:700;font-size:1.8rem;color:red;">Volgende halte: 05 : 55<span style="color:red;font-weight:700;margin-left:8px;">+ 7</span></div>
+
+    <!-- Halte namen -->
+    <div style="display:flex;justify-content:space-evenly;align-items:flex-end;margin-top:20px;">
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">Brussel-C</div>
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">Brussel-N</div>
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">Leuven</div>
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">Liège-Guillemins</div>
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">Gembloux</div>
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">Namur</div>
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">vb. Halte 7</div>
+      <div style="transform:rotate(-40deg);font-weight:500;font-size:2rem;">vb. Halte 8</div>
+    </div>
+
+    <!-- Route met vakjes -->
+    <div style="position:relative;height:8px;background:#555;border-radius:4px;margin-top:20px;">
+      <!-- 1e halte -->
+      <div style="position:absolute;left:3%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">1</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:3%;transform:translate(-50%,-50%);"></div>
+      <!-- 2e halte -->
+      <div style="position:absolute;left:14%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">3</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:14%;transform:translate(-50%,-50%);"></div>
+      <!-- 3e halte -->
+      <div style="position:absolute;left:24%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">3</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:24%;transform:translate(-50%,-50%);"></div>
+      <!-- 4e halte -->
+      <div style="position:absolute;left:34%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">1</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:34%;transform:translate(-50%,-50%);"></div>
+      <!-- 5e halte -->
+      <div style="position:absolute;left:53%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">5</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:53%;transform:translate(-50%,-50%);"></div>
+      <!-- 6e halte -->
+      <div style="position:absolute;left:65%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">2</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:65%;transform:translate(-50%,-50%);"></div>
+      <!-- 7e halte -->
+      <div style="position:absolute;left:74%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">P</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:74%;transform:translate(-50%,-50%);"></div>
+      <!-- 8e halte -->
+      <div style="position:absolute;left:87%;top:-40px;transform:translateX(-50%);background:#ccc;border-radius:4px;padding:2px 6px;font-weight:700;">P</div>
+      <div style="position:absolute;width:14px;height:14px;background:#555;border-radius:50%;top:50%;left:87%;transform:translate(-50%,-50%);"></div>
+
+      <!-- Pijl -->
+      <div style="content:'';position:absolute;top:50%;right:-4px;transform:translateY(-50%);border-left:16px solid #555;border-top:10px solid transparent;border-bottom:10px solid transparent;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Onderste deel -->
+<div style="display:flex;gap:20px;height:40%;">
+  <div style="background:#fff;border-radius:20px;flex:1;display:flex;align-items:center;justify-content:center;">
+    <div style="width:140px;height:140px;border:6px solid #000;border-radius:50%;position:relative;">
+      <div style="content:'';position:absolute;background:#000;left:50%;top:50%;width:4px;height:40px;transform-origin:bottom center;transform:translate(-50%,-100%) rotate(0deg);"></div>
+      <div style="content:'';position:absolute;background:#000;left:50%;top:50%;width:6px;height:60px;transform-origin:bottom center;transform:translate(-50%,-100%) rotate(120deg);"></div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-radius:20px;flex:1;display:flex;align-items:center;justify-content:center;">
+    <div style="display:flex;align-items:center;">
+      <div style="background:#999;height:80px;width:70px;border-top-left-radius:40px;border-bottom-left-radius:40px;margin:0 3px;"></div>
+      <div style="background:#999;height:80px;width:120px;border-radius:10px;margin:0 3px;position:relative;">
+        <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:22px;">♿🚲</span>
+        <div style="position:absolute;top:5px;right:5px;background:rgb(255, 153, 0);color:#fff;font-size:14px;padding:2px 4px;border-radius:4px;font-weight:bold;">
+          <img src="../pictures/group.png" alt="multiple" width="18px" height="18px">
+        </div>
+      </div>
+      <div style="background:#999;height:80px;width:120px;border-radius:10px;margin:0 3px;position:relative;">
+        <span style="position:absolute;bottom:10px;right:10px;font-weight:700;color:#000; font-size: 30px;">1</span>
+        <div style="position:absolute;top:5px;right:5px;background:rgb(43, 255, 0);color:#fff;font-size:14px;padding:2px 4px;border-radius:4px;font-weight:bold;">
+          <img src="../pictures/user.png" alt="single" width="18px" height="18px">
+        </div>
+      </div>
+      <div style="background:#999;height:80px;width:120px;border-radius:10px;margin:0 3px;position:relative;">
+        <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:22px;">♿🚲</span>
+        <div style="position:absolute;top:5px;right:5px;background:rgb(43, 255, 0);color:#fff;font-size:14px;padding:2px 4px;border-radius:4px;font-weight:bold;">
+          <img src="../pictures/user.png" alt="single" width="18px" height="18px">
+        </div>
+      </div>
+      <div style="background:#999;height:80px;width:120px;border-radius:10px;margin:0 3px;position:relative;">
+        <span style="position:absolute;bottom:10px;right:10px;font-weight:700;color:#000; font-size: 30px;">1</span>
+        <div style="position:absolute;top:5px;right:5px;background:red;color:#fff;font-size:14px;padding:2px 4px;border-radius:4px;font-weight:bold;">
+          <img src="../pictures/multiple-users-silhouette.png" alt="max" width="18px" height="18px">
+        </div>
+      </div>
+      <div style="background:#999;height:80px;width:70px;border-top-right-radius:40px;border-bottom-right-radius:40px;margin:0 3px;"></div>
+    </div>
+  </div>
+
+</div>
+
+    <div class="talen-container">
+      <div class="talen">
+        <div class="taal_icon active">
+          <img src="../pictures/833764.png" alt="Nederlands" class="icon">
+        </div>
+        <div class="taal_icon not-active">
+          <img src="../pictures/france.png" alt="Frans" class="icon">
+        </div>
+        <div class="taal_icon not-active">
+          <img src="../pictures/germany_icon.png" alt="Duits" class="icon">
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
